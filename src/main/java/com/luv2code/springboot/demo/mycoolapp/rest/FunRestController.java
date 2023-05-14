@@ -8,6 +8,16 @@ public class FunRestController {
     //expose "/" that return "Hello World"
     @GetMapping("/")
     public String sayHello(){
-        return "Hello World";
+        return "Hello World 13abc";
+    }
+
+    @GetMapping("/api2")
+    public String sayHello2(){
+        return "Hello World 2";
+    }
+
+    @GetMapping("/fortune")
+    public String getFortune(){
+        return "Today is your lucky day!" ;
     }
 }
